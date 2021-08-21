@@ -1,0 +1,28 @@
+{% extends "./layout.html" %}
+{% block extrahead %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='HSC.css') }}">
+{% endblock %}
+{% block content %}
+    <div class='Projects'>
+        <h1>HashMap Spell Checker</h1>
+        <div class="d-flex flex-row justify-content-center">
+            <ul>
+                <li>To run the spell checker, enter the following command in the command line interface below:
+                    <ul>
+                        <li>./sc</li>
+                    </ul>
+                </li>
+                <li>To see the source code:
+                    <ul>
+                        <li>Best option: <a href="https://github.com/mckerracher/HashMap-Spell-Checker">Github</a></li>
+                        <li>At the bottom of the window click on the "code" icon, and then select the "Files" icon
+                            in the top right corner (main.c contains the majority of the code).
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <iframe class="HSC_repl" src="https://replit.com/@JoshuaMcKerrach/HashMap-Spell-Checker?embed=true"/>
+    </div>
+{% endblock content %}

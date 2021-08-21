@@ -1,0 +1,177 @@
+.about_header {
+    position: relative;
+    top: 4vh;
+    text-align: center;
+}
+
+
+.langs {
+    position: relative;
+    top: 7vh;
+    left: 44vw;
+    width: 40vw;
+}
+
+.left {
+    color: white;
+    position: relative;
+    left: 1vw;
+    float: left;
+    font-size: 4vh;
+}
+
+.right {
+    float: right;
+    position: relative;
+    font-size: 4vh;
+    left: 4vw;
+}
+
+.python {
+    background-color: gray;
+    margin-bottom: 3vh;
+    position: relative;
+    height: 6vh;
+    width: 48vw;
+    overflow: hidden;
+}
+
+.inner-python {
+    height: 100%;
+    width: 90%;
+    background-color: rgb(174,198,207);
+
+    left: -100vw;
+    position: absolute;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 4s;
+    animation: slide 0.5s forwards;
+    animation-delay: 4s;
+}
+
+.java {
+    background-color: gray;
+    margin-bottom: 3vh;
+    position: relative;
+    height: 6vh;
+    width: 48vw;
+    overflow: hidden;
+}
+
+.inner-java {
+    height: 100%;
+    width: 90%;
+    background-color: rgb(174,198,207);
+
+    left: -100vw;
+    position: absolute;
+    -webkit-animation: slide 0.6s forwards;
+    -webkit-animation-delay: 3.4s;
+    animation: slide 0.6s forwards;
+    animation-delay: 3.4s;
+}
+
+.C {
+    background-color: gray;
+    margin-bottom: 3vh;
+    position: relative;
+    height: 6vh;
+    width: 48vw;
+    overflow: hidden;
+}
+
+.inner-C {
+    height: 100%;
+    width: 75%;
+    background-color: rgb(174,198,207);
+
+    left: -100vw;
+    position: absolute;
+    -webkit-animation: slide 0.7s forwards;
+    -webkit-animation-delay: 2.7s;
+    animation: slide 0.7s forwards;
+    animation-delay: 2.7s;
+}
+
+.javascript {
+    background-color: gray;
+    margin-bottom: 3vh;
+    position: relative;
+    height: 6vh;
+    width: 48vw;
+    overflow: hidden;
+}
+
+.inner-javascript {
+    height: 100%;
+    width: 70%;
+    background-color: rgb(174,198,207);
+
+    left: -100vw;
+    position: absolute;
+    -webkit-animation: slide 0.8s forwards;
+    -webkit-animation-delay: 1.9s;
+    animation: slide 0.8s forwards;
+    animation-delay: 1.9s;
+}
+
+.SQL {
+    background-color: gray;
+    margin-bottom: 3vh;
+    position: relative;
+    height: 6vh;
+    width: 48vw;
+    overflow: hidden;
+}
+
+.inner-SQL {
+    height: 100%;
+    width: 70%;
+    background-color: rgb(174,198,207);
+
+    left: -100vw;
+    position: absolute;
+    -webkit-animation: slide 0.9s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.9s forwards;
+    animation-delay: 1s;
+}
+
+.bash {
+    background-color: gray;
+    position: relative;
+    height: 6vh;
+    width: 48vw;
+
+    overflow: hidden;
+}
+
+.inner-bash {
+    height: 100%;
+    width: 70%;
+    background-color: rgb(174,198,207);
+
+    left: -100vw;
+    position: absolute;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slide 1s forwards;
+    animation-delay: 0s;
+}
+
+.LHS {
+    position: relative;
+    width: 45vw;
+    top: -45vh;
+    font-size: 3.3vh;
+    color: white;
+    left: -2vw;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}

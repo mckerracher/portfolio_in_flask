@@ -1,0 +1,34 @@
+.contact_header {
+    text-align: center;
+    position: relative;
+    top: 20vh;
+}
+
+.bttns {
+    position: relative;
+    top: 32vh;
+}
+
+.ctc {
+    text-align: center;
+    position: relative;
+    top: 25vh;
+}
+
+.buttons {
+    position: relative;
+    text-align: center;
+    top: 35vh;
+}
+
+.darkone {
+    position: relative;
+    top: 3vh;
+    left: -15vw;
+}
+
+.lightone {
+    position: relative;
+    top: -4vh;
+    left: 15vw;
+}

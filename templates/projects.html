@@ -1,0 +1,73 @@
+{% extends "./layout.html" %}
+{% block extrahead %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='projects.css') }}">
+{% endblock %}
+{% block content %}
+<div class="CardContainer">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <div class="col">
+            <a href="{{ url_for('opal') }}" class="card-link">
+            <div class="card">
+                <div class="card-body bg-primary">
+                    <h5 class="card-title text-light">OPaL - OSU Programming Language Compiler</h5>
+                    <p class="card-text text-light"> OPaL is my senior group project - a compiler implemented in C for a
+                                dynamically typed language called OPaL. It produces assembly code modeled after
+                                Java byte-code using a single address stack machine model. An orchestrator tool that
+                                is used by the end user runs the individual components of the project sequentially and then invokes NASM to
+                                output an executable.</p>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="{{ url_for('backlog') }}" class="card-link">
+            <div class="card">
+                <div class="card-body bg-primary">
+                    <h5 class="card-title text-light">The Backlog Website</h5>
+                    <p class="card-text text-light">The Backlog is a website hosted on Heroku and created with the Python Flask framework.
+                                The Backlog uses a MySQL (ClearDB) database for data storage. This website was created
+                                as a team project for my databases course (CS340) at OSU, and the database architecture
+                                can be found in the Github repository under the SQL folder in the report.pdf file.
+                                Completed Winter 2021.</p>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="{{ url_for('hsc') }}" class="card-link">
+            <div class="card">
+                <div class="card-body bg-primary">
+                    <h5 class="card-title text-light">Hashmap Spell Checker</h5>
+                    <p class="card-text text-light">The final project for the Data Structures course at OSU: a CLI spell checking
+                                    application implemented in C.  The data structure used to store and access the
+                                    dictionary is a hashmap.  To calculate how similar a word is to a given word in
+                                    the dictionary, the Levenstein distance is computed for the user supplied word:
+                                    if the word isn't found, it supplies the top 5 most similar words in the
+                                    dictionary.</p>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="{{ url_for('dll') }}" class="card-link">
+            <div class="card">
+                <div class="card-body bg-primary">
+                    <h5 class="card-title text-light">Doubly Linked List</h5>
+                    <p class="card-text text-light"> This implementation of a doubly linked list was created for my Boise State University
+                                    CS221 class. The architecture for this implementation is defined in the
+                                    IUDoubleLinkedList.java file, which includes all of the methods that must be
+                                    included, along with their required arguments and the kind exception each must
+                                    throw. The generic Java Type is used, which enforces data type uniformity across
+                                    methods.</p>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

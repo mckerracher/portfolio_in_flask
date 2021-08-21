@@ -1,0 +1,28 @@
+.CardContainer {
+    width: 80vw;
+    margin: auto;
+
+}
+
+.bg-primary {
+    background: linear-gradient(-45deg, rgba(119,119,119,1) 0%, rgba(0,0,0,1) 93%);
+}
+
+.card_opal {
+    background: linear-gradient(-45deg, rgba(119,119,119,1) 0%, rgba(0,0,0,1) 93%);
+    overflow: hidden;
+
+}
+
+.card_bl {
+    background: linear-gradient(-45deg, rgba(119,119,119,1) 0%, rgba(0,0,0,1) 93%);
+    overflow: hidden;
+}
+
+.card_dll {
+    background: linear-gradient(-45deg, rgba(119,119,119,1) 0%, rgba(0,0,0,1) 93%);
+}
+
+.card_hsc {
+    background: linear-gradient(-45deg, rgba(119,119,119,1) 0%, rgba(0,0,0,1) 93%);
+}

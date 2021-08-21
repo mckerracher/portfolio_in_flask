@@ -1,0 +1,22 @@
+.opl_repl {
+    width: 95%;
+    height: 85vh;
+    margin: 0 auto;
+    background-color: #777;
+    display:block;
+    margin-bottom: 10vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+.opal{
+    position: relative;
+    width: 80vw;
+    left: 10vw;
+}

@@ -1,0 +1,65 @@
+{% extends "./layout.html" %}
+{% block extrahead %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+{% endblock %}
+{% block content %}
+
+    <div class='About'>
+        <h1 class="about_header">About Me</h1>
+
+        <div class="langs">
+
+            <div class="python">
+                <div class="inner-python">
+                    <div class="left">Python</div>
+                    <div class="right">90%</div>
+                </div>
+            </div>
+
+            <div class="java">
+                <div class="inner-java">
+                    <div class="left">Java</div>
+                    <div class="right">90%</div>
+                </div>
+            </div>
+
+            <div class="C">
+                <div class="inner-C">
+                    <div class="left">C/C++</div>
+                    <div class="right">75%</div>
+                </div>
+            </div>
+
+            <div class="javascript">
+                <div class="inner-javascript">
+                    <div class="left">Javascript</div>
+                    <div class="right">70%</div>
+                </div>
+            </div>
+
+            <div class="SQL">
+                <div class="inner-SQL">
+                    <div class="left">SQL</div>
+                    <div class="right">70%</div>
+                </div>
+            </div>
+
+            <div class="bash">
+                <div class="inner-bash">
+                    <div class="left">Bash</div>
+                    <div class="right">70%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="LHS">
+            Hello! My name is Josh, and I enjoy creating things with code. My interest in software started while
+            working on a second bachelor's degree in Electrical Engineering in 2019. Part of the Electrical
+            Engineering curriculum included two Computer Science courses. After the first course in CS, I was hooked!
+            I switched my major to Computer Science and completed a second bachelor's degree from
+            Oregon State University. I'm now a DevOps Software Engineer at Micron working with a wide
+            variety of technologies.
+        </div>
+    </div>
+
+{% endblock content %}

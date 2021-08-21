@@ -1,0 +1,9 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap);
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+    background: rgb(119,119,119);
+    background: linear-gradient(90deg, rgba(119,119,119,1) 0%, rgba(0,0,0,1) 93%);
+    color: white;
+}

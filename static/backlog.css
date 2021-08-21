@@ -1,0 +1,16 @@
+.bl_repl {
+    width: 95%;
+    height: 85vh;
+    margin: 0 auto;
+    background-color: #777;
+    display:block;
+}
+
+.BL_text {
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+}

@@ -1,0 +1,19 @@
+.repl {
+    width: 95%;
+    height: 85vh;
+    margin: 0 auto;
+    background-color: #777;
+    display:block;
+}
+
+.instructions {
+    position: relative;
+    left: 10vw;
+    width: 80%;
+
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+}
