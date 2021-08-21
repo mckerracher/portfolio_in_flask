@@ -8,7 +8,8 @@
 }
 
 h1 {
-    text-align: center;
+    position: relative;
+    left: 5vw;
 }
 
 h4{
