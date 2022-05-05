@@ -1,18 +1,17 @@
 .opl_repl {
+    position: relative;
+    text-align: center;
     width: 95%;
     height: 85vh;
-    margin: 0 auto;
-    background-color: #777;
-    display:block;
-    margin-bottom: 10vh;
 }
 
 h1 {
     position: relative;
-    left: 5vw;
+    text-align: center;
 }
 
 h4{
+    position: relative;
     text-align: center;
 }
 
