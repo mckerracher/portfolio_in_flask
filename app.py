@@ -41,7 +41,7 @@ def hsc():
 
 @app.route("/opal", methods=['POST', 'GET'])
 def opal():
-    # test
+    # testing
     return render_template('OPAL.html')
 
 
