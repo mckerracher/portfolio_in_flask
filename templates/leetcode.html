@@ -1,0 +1,13 @@
+{% extends "./layout.html" %}
+{% block extrahead %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='leetcode.css') }}">
+{% endblock %}
+{% block content %}
+    <div class='Projects'>
+        <h1>LeetCode Problem: "Contains Duplicate"</h1>
+        <div class="d-flex flex-row justify-content-center">
+            <p>Explanation</p>
+        </div>
+        <iframe class="_repl" src="https://replit.com/@JoshuaMcKerrach/leetcodepractice?embed=true"/>
+    </div>
+{% endblock content %}

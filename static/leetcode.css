@@ -1,0 +1,15 @@
+._repl {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    margin: 0 auto;
+    background-color: #777;
+    display:block;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+}

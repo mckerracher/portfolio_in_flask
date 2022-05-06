@@ -41,8 +41,17 @@ def hsc():
 
 @app.route("/opal", methods=['POST', 'GET'])
 def opal():
-    # testing
     return render_template('OPAL.html')
+
+
+@app.route("/lc_contains_duplicate", methods=['POST', 'GET'])
+def lc_contains_duplicate():
+    return render_template('lc_contains_duplicate.html')
+
+
+@app.route("/lc_valid_anagram", methods=['POST', 'GET'])
+def lc_valid_anagram():
+    return render_template('lc_valid_anagram.html')
 
 
 if __name__ == '__main__':
