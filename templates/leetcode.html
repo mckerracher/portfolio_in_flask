@@ -1,13 +1,40 @@
 {% extends "./layout.html" %}
 {% block extrahead %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='leetcode.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='leetcode.css') }}">
 {% endblock %}
 {% block content %}
-    <div class='Projects'>
-        <h1>LeetCode Problem: "Contains Duplicate"</h1>
-        <div class="d-flex flex-row justify-content-center">
-            <p>Explanation</p>
+<div class='Projects'>
+    <h1>LeetCode Problems</h1>
+
+    <div class="card-group">
+        <div class="card text-center">
+            <div class="card-body text-white bg-dark">
+                <h5 class="card-title">Product of Array Except Self</h5>
+                <p class="card-text">Given an integer array nums, return an array answer such that answer[i]
+                    is equal to the product of all the elements of nums except nums[i]. The product of any prefix
+                    or suffix of nums is guaranteed to fit in a 32-bit integer. You must write an algorithm that
+                    runs in O(n) time and without using the division operation.</p>
+                <a href="{{ url_for('lc_prod_exc_self') }}" class="btn btn-primary">Product of Array Except Self</a>
+            </div>
         </div>
-        <iframe class="_repl" src="https://replit.com/@JoshuaMcKerrach/leetcodepractice?embed=true"/>
+        <div class="card text-center">
+            <div class="card-body text-white bg-dark">
+                <h5 class="card-title">Contains Duplicate</h5>
+                <p class="card-text">Given an integer array nums, return true if any value appears at least twice
+                    in the array, and return false if every element is distinct.</p>
+                <a href="{{ url_for('lc_contains_duplicate') }}" class="btn btn-primary">Contains Duplicate</a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="card-body text-white bg-dark">
+                <h5 class="card-title">Valid Anagram</h5>
+                <p class="card-text">Given two strings s and t, return true if t is an anagram of s, and false
+                    otherwise.</p>
+                <a href="{{ url_for('lc_valid_anagram') }}" class="btn btn-primary">Valid Anagram</a>
+            </div>
+        </div>
     </div>
+
+
+</div>
 {% endblock content %}

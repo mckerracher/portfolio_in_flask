@@ -9,6 +9,13 @@
     margin-bottom: 8vh;
 }
 
+
+
+h1 {
+    position: relative;
+    text-align: center;
+}
+
 h2 {
     position: relative;
     text-align: center;

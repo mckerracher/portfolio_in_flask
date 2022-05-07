@@ -44,6 +44,11 @@ def opal():
     return render_template('OPAL.html')
 
 
+@app.route("/leetcode", methods=['POST', 'GET'])
+def leetcode():
+    return render_template('leetcode.html')
+
+
 @app.route("/lc_contains_duplicate", methods=['POST', 'GET'])
 def lc_contains_duplicate():
     return render_template('lc_contains_duplicate.html')
