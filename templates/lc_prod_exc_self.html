@@ -1,0 +1,40 @@
+{% extends "./layout.html" %}
+{% block extrahead %}
+<link rel="stylesheet" href="{{ url_for('static', filename='leetcode.css') }}">
+{% endblock %}
+{% block content %}
+<div class='Projects'>
+
+    <div class="card text-center">
+        <div class="card-header text-white bg-primary">
+            LeetCode Problem:
+        </div>
+        <div class="card-body text-white bg-dark">
+            <h1 class="card-title">Product of Array Except Self</h1>
+            <img class="card-img-top" src="static/images/prod_exc_self.png" alt="Card image cap">
+            <h4>--------</h4>
+            <h5 class="card-text">As LeetCode medium level problems go, this one bordered on hard (in my opinion). To
+            effectively describe the solution to this problem, I think it's helpful to first understand the brute force
+            solution (the brute force solution can be seen in the replit below). Intuitively, the brute force solution
+            involves running nested loops. The first loop would track which index is the one to be excluded from the product,
+            and the second would calculate the product of each number in the array except for the number pointed at by
+            the first loop. One might notice, however, that this process can be optimized. One need only run a single
+            loop with two pointers: one starting at each end of the array. The left pointer calculates the product moving
+            left to right (the prefixes), and the right pointer calculates the product moving right to left (the postfixes).
+                The prefix value for each number in the array is the product of every value to the left of it. Similarly,
+                the postfix is the product of every value to the right of the number in question. Using two arrays,
+                these two products can be saved for each number in the array. This solution would yield an O(n) time and
+            memory complexity. Since the problem doesn't count the return array as memory used, the return array is used
+            to store both the prefix and postfix values such that correct result is stored.</h5>
+            <h4>--------</h4>
+            <a href="https://leetcode.com/problems/valid-anagram/" target="_blank" class="btn btn-primary">LeetCode Problem</a>
+            <a href="https://github.com/mckerracher/leetcode_practice/blob/master/valid_anagram.py" target="_blank" class="btn btn-warning">My Solution</a>
+            <h4>--------</h4>
+            <img src="static/images/prod_exc_self_sol.png" alt="Card image cap">
+            <h4>--------</h4>
+            <h5 class="card-title">Solution space complexity: O(n)</h5>
+            <h5 class="card-title">Solution time complexity: O(n)</h5>
+        </div>
+    </div>
+</div>
+{% endblock content %}

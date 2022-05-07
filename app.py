@@ -54,5 +54,10 @@ def lc_valid_anagram():
     return render_template('lc_valid_anagram.html')
 
 
+@app.route("/lc_prod_exc_self", methods=['POST', 'GET'])
+def lc_prod_exc_self():
+    return render_template('lc_prod_exc_self.html')
+
+
 if __name__ == '__main__':
     app.run()
