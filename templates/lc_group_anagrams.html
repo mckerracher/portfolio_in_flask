@@ -1,0 +1,33 @@
+{% extends "./layout.html" %}
+{% block extrahead %}
+<link rel="stylesheet" href="{{ url_for('static', filename='leetcode.css') }}">
+{% endblock %}
+{% block content %}
+<div class='Projects'>
+
+    <div class="card text-center">
+        <div class="card-header text-white bg-primary">
+            LeetCode Problem:
+        </div>
+        <div class="card-body text-white bg-dark">
+            <h1 class="card-title">Group Anagrams</h1>
+            <img class="card-img-top" src="static/images/group_anagrams.png" alt="Card image cap">
+            <h4>--------</h4>
+            <h5 class="card-text">The strategy for this problem is pretty interesting. The key is to use an
+            array of 26 zeroes. Each position in the array corresponds to a letter in the alphabet. This array is then
+                used to count the number of times each letter occurs in a word. The array is then used as a key in
+            a hashmap (the hashmap uses the letter count array as a key and has a list of words as the value) and the
+                corresponding word is added to the list of words matching the letter counts.</h5>
+            <h4>--------</h4>
+            <a href="https://leetcode.com/problems/group-anagrams/" target="_blank" class="btn btn-primary">LeetCode Problem</a>
+            <a href="https://github.com/mckerracher/leetcode_practice/blob/master/group_anagrams.py" target="_blank" class="btn btn-warning">My Solution</a>
+            <h4>--------</h4>
+            <img src="static/images/group_anagrams_sol.png" alt="valid group anagrams solution">
+            <h4>--------</h4>
+            <h5 class="card-title">Solution space complexity: O(n)</h5>
+            <h5 class="card-title">Solution time complexity: O(n)</h5>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

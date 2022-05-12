@@ -64,5 +64,10 @@ def lc_prod_exc_self():
     return render_template('lc_prod_exc_self.html')
 
 
+@app.route("/lc_group_anagrams", methods=['POST', 'GET'])
+def lc_group_anagrams():
+    return render_template('lc_group_anagrams.html')
+
+
 if __name__ == '__main__':
     app.run()
