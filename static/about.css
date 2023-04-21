@@ -1,15 +1,26 @@
 .about_header {
     position: relative;
-    top: 4vh;
     text-align: center;
+    padding-bottom: 5vh;
 }
 
+.About{
+    display: flex;
+}
 
 .langs {
     position: relative;
-    top: 7vh;
-    left: 44vw;
-    width: 40vw;
+     flex-basis: 35%;
+     height: 80vh;
+     padding-left: 2vw;
+}
+
+.LHS {
+    position: relative;
+    flex-basis: 50%;
+    height: 80vh;
+    font-size: 3.3vh;
+    color: white;
 }
 
 .left {
@@ -157,15 +168,6 @@
     -webkit-animation-delay: 0s;
     animation: slide 1s forwards;
     animation-delay: 0s;
-}
-
-.LHS {
-    position: relative;
-    width: 45vw;
-    top: -45vh;
-    font-size: 3.3vh;
-    color: white;
-    left: -2vw;
 }
 
 @-webkit-keyframes slide {

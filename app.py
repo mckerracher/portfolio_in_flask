@@ -1,7 +1,9 @@
+import os
+
 from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'oTv!5ox8LB#A&@cBHpa@onsKU'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 
 @app.route("/", methods=['POST', 'GET'])
